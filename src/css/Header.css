@@ -1,0 +1,76 @@
+/* Header.css */
+header {
+  background-color: #1c6000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700; /* Bold weight for the company name */
+}
+
+.header-right nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500; /* Regular weight for navigation links */
+  transition: color 0.3s ease;
+}
+
+.header-right nav a:hover {
+  color: #27a102; /* Light green on hover */
+}
+
+/* More Menu */
+.more-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.more-menu span {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500; /* Regular weight for "More" text */
+  transition: color 0.3s ease;
+}
+
+.more-menu:hover span {
+  color: #27a102; /* Light green on hover */
+}
+
+.more-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 150px;
+}
+
+.more-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #333 !important; /* Dark grey text (force override) */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400; /* Regular weight for dropdown links */
+  transition: background-color 0.3s ease;
+}
+
+.more-dropdown a:hover {
+  background-color: #f9f9f9; /* Light grey background on hover */
+  color: #1c6000 !important; /* Green text on hover (force override) */
+}

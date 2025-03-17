@@ -1,0 +1,150 @@
+/* Contact.css */
+.contact {
+  background-color: #fafafa; /* Light gray background */
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('https://via.placeholder.com/1200x600'); /* Replace with your custom image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white; /* White text for contrast */
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Options Section */
+.contact-options {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white; /* White background for contrast */
+}
+
+.contact-options h2 {
+  font-size: 2.5rem;
+  color: #1c6000; /* Green heading color */
+  margin-bottom: 40px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.option-card {
+  background-color: #fafafa; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-card h3 {
+  font-size: 1.5rem;
+  color: #1c6000; /* Green heading color */
+  margin-bottom: 10px;
+}
+
+.option-card p {
+  font-size: 1rem;
+  color: #555; /* Grey text color */
+  margin-bottom: 10px;
+}
+
+.option-card a {
+  color: #1c6000; /* Green link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.option-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fafafa; /* Light gray background */
+}
+
+.contact-form-section h2 {
+  font-size: 2.5rem;
+  color: #1c6000; /* Green heading color */
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #333; /* Dark gray text */
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.submit-button {
+  background-color: #1c6000; /* Green button background */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #27a102; /* Light green on hover */
+}

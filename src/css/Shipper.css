@@ -1,0 +1,69 @@
+/* General Styles */
+ 
+  /* Hero Section */
+  .hero-section {
+    background: url('https://path/to/hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    padding: 80px 20px;
+  }
+  
+  .content-section.alt {
+    background: #f9f9f9;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .image-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Alternate Layout for Image Left + Text Right */
+  .content-section.alt .content-container {
+    flex-direction: row-reverse;
+  }
+  
