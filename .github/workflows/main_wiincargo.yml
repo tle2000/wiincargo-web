@@ -27,7 +27,7 @@ jobs:
         run: npm install
         
       - name: Set OpenSSL Legacy Provider (Fix Webpack Issue)
-        run: export NODE_OPTIONS=--openssl-legacy-provider
+        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
 
       - name: Build Project
         run: npm run build
