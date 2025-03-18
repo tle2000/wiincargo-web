@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '20.x'
 
+      - name: Set OpenSSL Legacy Provider (Fix Webpack Issue)
+        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
+
       - name: npm install, build, and test
         run: |
           npm install
